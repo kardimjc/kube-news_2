@@ -6,7 +6,7 @@ on:
 
 jobs:
   CI:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
    
   steps:
    - uses: actions/checkout@v4.1.4
@@ -24,7 +24,5 @@ jobs:
       file: ./src/Dockerfile
       push: true
       tags: ricardoribeiro/Live-kube-news:v1
-          ricardoribeiro/Live-kube-news:latest
-
-          
+          ricardoribeiro/Live-kube-news:latest    
   
