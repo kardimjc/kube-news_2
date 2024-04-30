@@ -10,18 +10,13 @@ on:
 jobs:
   CI:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-      id-token: write
-      security-events: write
 
     steps:
     - name: Obtendo o código
       uses: actions/checkout@v3
       
     - name: Docker Login
-      uses: docker/login-action@v3.0.0
+      uses: docker/login-action@v3.1.0
       with:
         username: ${{secrets.DOCKERHUB_USER}}
         password: ${{secrets.DOCKERHUB_PWD}}
