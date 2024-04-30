@@ -28,7 +28,7 @@ jobs:
         file: ./src/Dockerfile
         push: true
         tags: |
-          ricardoribeiro/kube-news:v1
-          ricardoribeiro/kube-news:latest  
+          kardim22/kube-news:v1
+          kardim22/kube-news:latest  
 
   
